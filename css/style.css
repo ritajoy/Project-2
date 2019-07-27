@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    line-height: 24px;
+}
+
+/* Header */
+
+header {
+    background-color: #fafafa;
+    font-family: 'Noto Sans', sans-serif;
+    color: #4a4a4a;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+h1 {
+    margin: 0;
+    padding: 15px 0;
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+nav {
+    padding-bottom: 20px
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    background-color: #ffffff;
+    text-transform: uppercase;
+    margin: 5px 20px;
+    padding: 10px 20px;
+}
+
+/* nav > ul > li:hover {
+    background-color: #fed36e;
+    cursor: pointer;
+} */
+
+a {
+    color: #4a4a4a;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+#introduction img {
+    width: 60%;
+}
+
+#introduction p {
+    color: #7f7f7f;
+    margin: 25px 25px;
+}
+
+/* Header end */
+
+/* Main */
+
+.section-title {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 45px 0;
+}
+
+#skills {
+    background-color: #fed36e;
+    padding: 25px;
+}
+
+.skills-list {
+    list-style-type: none;
+    text-align: center;
+}
+
+.skill {
+    font-family: 'Noto Sans', sans-serif;
+    color: #4a4a4a;
+    font-weight: 500;
+    background: none;
+}
+
+.portfolio-item {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.portfolio-item img {
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+}
+
+.portfolio-item-title {
+    font-family: 'Roboto', sans-serif;
+    color: #4a4a4a;
+    font-weight: 500;
+}
+
+.portfolio-item-description {
+    color: #4a4a4a;
+    width: 80%;
+    margin: 5px auto 30px auto;
+}
+
+#contact {
+    background-color: #fafafa;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+#contact .section-title {
+    padding-top: 55px;
+}
+
+.contact-text {
+    margin: 0 8% 5% 8%;
+}
+
+#contact p {
+    font-family: sans-serif;
+    color: #7f7f87;
+    font-size: 1rem;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-left: 8px;
+}
+
+#contact p:last-of-type {
+    margin-bottom: 0;
+}
+
+/* Main end */
+
+/* Footer */
+
+footer {
+    background-color: #fafafa;
+    padding: 0 20px;
+    color: #4a4a4a;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1.5px solid #e7e7e7;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.student-name-bottom,
+.back-to-top {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.back-to-top {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.footer-menu {
+    display: none;
+}
+
+/* Footer end */
+
+/* Media Queries */
+
+
+/* TABLETS */
+@media screen and (min-width: 768px) {
+    li {
+        background: none;
+        display: inline-block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #introduction {
+        display: flex;
+    }
+
+    #introduction img {
+        order: 2;
+        width: 150%;
+        margin-left: 4%;
+        margin-right: 4%;
+        flex-grow: 2;
+    }
+
+    #introduction p {
+        order: 1;
+        text-align: left;
+        margin-right: 0;
+        font-size: 1.1rem;
+    }
+
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .portfolio-item {
+        flex: 0 50%;
+        box-sizing: border-box;
+    }
+
+    #contact p {
+        font-size: 1.1rem;
+        display: block;
+        width: 470px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .back-to-top {
+        display: none;
+    }
+
+    .footer-menu {
+        display: inline-flex;
+    }
+
+    .footer-menu > ul {
+        margin: 0;
+    }
+
+    .footer-menu li {
+        font-size: 0.8rem;
+    }
+
+    .footer-info {
+        padding-top: 2%;
+        padding-bottom: 3%;
+    }
+}
+
+/* DESKTOP */
+@media all and (min-width: 1024px) {
+    header {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+    .header-top {
+        display: flex;
+        justify-content: space-between;
+        padding: 2% 0;
+    }
+
+    #introduction img {
+        width: 150%;
+        margin-right: 0;
+    }
+
+    #introduction p {
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+
+    .portfolio-item {
+        flex: 0 33%;
+    }
+
+    .footer-info {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    #contact p {
+        font-size: 1.2rem;
+        width: 520px;
+    }
+}
